@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -165,14 +166,14 @@ public class RegisterActivity extends AppCompatActivity {
         String email = binding.etEmail.getText().toString().trim();
         String password = binding.etPassword.getText().toString().trim();
 
+        Log.d("FirebaseDebug", "Starting user registration with email: " + email);
+
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
-                        // Save user data to Firebase Database
-                        String userId = mAuth.getCurrentUser().getUid();
+                        String userId = task.getResult().getUser().getUid();  // your updated line
                         saveUserToFirebase(userId);
                     } else {
-                        // If sign in fails, display a message to the user.
                         binding.registerProgressBar.setVisibility(View.GONE);
                         Toast.makeText(RegisterActivity.this, "Registration failed: " +
                                 task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -181,6 +182,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     private void saveUserToFirebase(String userId) {
+        Log.d("FirebaseDebug", "Saving user to Firebase: " + userId);
+
         User user = new User(
                 binding.etFirstName.getText().toString().trim(),
                 binding.etLastName.getText().toString().trim(),
@@ -190,7 +193,8 @@ public class RegisterActivity extends AppCompatActivity {
                 binding.etDob.getText().toString().trim(),
                 ""  // Default empty profile picture URL
         );
-
+        Log.d("FirebaseDebug", "Saving user data to: users/" + userId);
+        Log.d("FirebaseDebug", "User data: " + new Gson().toJson(user));
         // Save user to Firebase Database
         mDatabase.child("users").child(userId).setValue(user)
                 .addOnCompleteListener(task -> {

@@ -9,6 +9,9 @@ public class User {
     private String dob;
     private String profilePictureUrl;
 
+    public User() {
+    }
+
     public User(String firstName, String lastName, String phone, String email, String username,
                 String dob, String profilePictureUrl) {
         this.firstName = firstName;

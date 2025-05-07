@@ -57,6 +57,9 @@ dependencies {
     // OkHttp for network requests
     implementation 'com.squareup.okhttp3:okhttp:4.10.0'
 
+    // Firebase Storage
+    implementation 'com.google.firebase:firebase-storage:21.0.1'
+
     // Testing
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
