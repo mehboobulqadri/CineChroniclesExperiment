@@ -166,15 +166,18 @@ public class RegisterActivity extends AppCompatActivity {
         String email = binding.etEmail.getText().toString().trim();
         String password = binding.etPassword.getText().toString().trim();
 
+        Log.d("FirebaseDebug", "Register button clicked, starting registration for: " + email);
         Log.d("FirebaseDebug", "Starting user registration with email: " + email);
 
         mAuth.createUserWithEmailAndPassword(email, password)
                 .addOnCompleteListener(this, task -> {
                     if (task.isSuccessful()) {
                         String userId = task.getResult().getUser().getUid();  // your updated line
+                        Log.d("FirebaseDebug", "User registered successfully, UID: " + userId);
                         saveUserToFirebase(userId);
                     } else {
                         binding.registerProgressBar.setVisibility(View.GONE);
+                        Log.e("FirebaseDebug", "Registration failed: " + task.getException().getMessage());
                         Toast.makeText(RegisterActivity.this, "Registration failed: " +
                                 task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
@@ -201,6 +204,7 @@ public class RegisterActivity extends AppCompatActivity {
                     binding.registerProgressBar.setVisibility(View.GONE);
                     if (task.isSuccessful()) {
                         // Save user to SharedPreferences
+                        Log.d("FirebaseDebug", "User successfully saved to database");
                         saveUserLocally(user);
 
                         // Sign in success, update UI with the signed-in user's information
@@ -209,7 +213,10 @@ public class RegisterActivity extends AppCompatActivity {
                         Intent intent = new Intent(RegisterActivity.this, HomeActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(intent);
+                        finish();
                     } else {
+                        Log.e("FirebaseDebug", "Failed to save user to database: " +
+                                task.getException().getMessage());
                         Toast.makeText(RegisterActivity.this, "Failed to save user data: " +
                                 task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                     }
