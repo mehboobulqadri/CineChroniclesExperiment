@@ -108,63 +108,69 @@ public class HomeFragment extends Fragment {
         apiClient.getTrendingMovies(new MovieApiClient.OnMoviesLoadedListener() {
             @Override
             public void onMoviesLoaded(List<Movie> movies) {
-                binding.trendingMoviesProgressBar.setVisibility(View.GONE);
-                if (trendingMoviesAdapter != null) {
-                    trendingMoviesAdapter.setMovies(movies);
+                if (isAdded() && binding != null) {
+                    binding.trendingMoviesProgressBar.setVisibility(View.GONE);
+                    if (trendingMoviesAdapter != null) {
+                        trendingMoviesAdapter.setMovies(movies);
+                    }
                 }
             }
 
             @Override
             public void onError(String errorMessage) {
-                binding.trendingMoviesProgressBar.setVisibility(View.GONE);
-                // Fallback to local data
-                loadLocalTrendingMovies();
-                if (getContext() != null) {
-                    Toast.makeText(getContext(), "Error loading trending movies: " + errorMessage, Toast.LENGTH_SHORT).show();
+                if (isAdded() && binding != null) {
+                    binding.trendingMoviesProgressBar.setVisibility(View.GONE);
+                    loadLocalTrendingMovies();
+                    Toast.makeText(requireContext(), "Error loading trending movies: " + errorMessage, Toast.LENGTH_SHORT).show();
                 }
             }
+
         });
 
         // Load new releases from API
         apiClient.getNewReleases(new MovieApiClient.OnMoviesLoadedListener() {
             @Override
             public void onMoviesLoaded(List<Movie> movies) {
-                binding.newReleasesProgressBar.setVisibility(View.GONE);
-                if (newReleasesAdapter != null) {
-                    newReleasesAdapter.setMovies(movies);
+                if (isAdded() && binding != null) {
+                    binding.newReleasesProgressBar.setVisibility(View.GONE);
+                    if (newReleasesAdapter != null) {
+                        newReleasesAdapter.setMovies(movies);
+                    }
                 }
             }
 
             @Override
             public void onError(String errorMessage) {
-                binding.newReleasesProgressBar.setVisibility(View.GONE);
-                // Fallback to local data
-                loadLocalNewReleases();
-                if (getContext() != null) {
-                    Toast.makeText(getContext(), "Error loading new releases: " + errorMessage, Toast.LENGTH_SHORT).show();
+                if (isAdded() && binding != null) {
+                    binding.newReleasesProgressBar.setVisibility(View.GONE);
+                    loadLocalNewReleases();
+                    Toast.makeText(requireContext(), "Error loading new releases: " + errorMessage, Toast.LENGTH_SHORT).show();
                 }
             }
+
         });
 
         // Load popular series from API
         apiClient.getPopularSeries(new MovieApiClient.OnSeriesLoadedListener() {
             @Override
             public void onSeriesLoaded(List<Series> series) {
-                binding.seriesProgressBar.setVisibility(View.GONE);
-                if (seriesAdapter != null) {
-                    seriesAdapter.setSeries(series);
+                if (isAdded() && binding != null) {
+                    binding.seriesProgressBar.setVisibility(View.GONE);
+                    if (seriesAdapter != null) {
+                        seriesAdapter.setSeries(series);
+                    }
                 }
             }
 
             @Override
             public void onError(String errorMessage) {
-                binding.seriesProgressBar.setVisibility(View.GONE);
-                // Fallback to local data
-                loadLocalSeries();
-                if (getContext() != null) {
-                    Toast.makeText(getContext(), "Error loading series: " + errorMessage, Toast.LENGTH_SHORT).show();
+                if (isAdded() && binding != null) {
+                    binding.seriesProgressBar.setVisibility(View.GONE);
+                    loadLocalSeries();
+                    Toast.makeText(requireContext(), "Error loading series: " + errorMessage, Toast.LENGTH_SHORT).show();
                 }
             }
+
         });
     }
 

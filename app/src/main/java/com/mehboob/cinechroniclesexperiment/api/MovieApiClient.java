@@ -30,10 +30,10 @@ import okhttp3.Response;
 public class MovieApiClient {
     private static final String TAG = "MovieApiClient";
     // API key should ideally be in BuildConfig or encrypted
-    private static final String API_KEY = "3e4d90cc78f94327d74c8438c9927505";
+    private static final String API_KEY = "d82ada42a47c8e8946ee18e781b3d4c2";
     private static final String BASE_URL = "https://api.themoviedb.org/3";
     private static final String IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w500";
-    private static final String NEWS_API_KEY = "YOUR_NEWS_API_KEY"; // Replace with actual key
+    private static final String NEWS_API_KEY = "54ae23384dea47daa32f0aaed5c4dd8f"; // Replace with actual key
     private static final String NEWS_BASE_URL = "https://newsapi.org/v2";
 
     private final OkHttpClient client;
