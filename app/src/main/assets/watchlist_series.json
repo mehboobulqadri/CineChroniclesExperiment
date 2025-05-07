@@ -1,0 +1,28 @@
+{
+  "series": [
+    {
+      "id": "5",
+      "title": "The Witcher",
+      "poster_url": "https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
+      "synopsis": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+      "genre": "Action, Adventure, Fantasy",
+      "first_air_year": 2019,
+      "seasons": 2,
+      "rating": 8.2,
+      "is_in_watchlist": true
+    },
+    {
+      "id": "6",
+      "title": "The Crown",
+      "poster_url": "https://image.tmdb.org/t/p/w500/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/hQjKNIlrr4D9rID7QQmdQAf7Twj.jpg",
+      "synopsis": "Follows the political rivalries and romance of Queen Elizabeth II's reign and the events that shaped the second half of the twentieth century.",
+      "genre": "Drama, History",
+      "first_air_year": 2016,
+      "seasons": 4,
+      "rating": 8.7,
+      "is_in_watchlist": true
+    }
+  ]
+}

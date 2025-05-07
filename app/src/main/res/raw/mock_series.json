@@ -1,0 +1,64 @@
+{
+  "series": [
+    {
+      "id": "1",
+      "title": "Breaking Bad",
+      "poster_url": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/tsRy63Mu5cu8etL1X7ZLyf7UP1M.jpg",
+      "synopsis": "A high school chemistry teacher diagnosed with inoperable lung cancer turns to manufacturing and selling methamphetamine in order to secure his family's future.",
+      "genre": "Crime, Drama, Thriller",
+      "first_air_year": 2008,
+      "seasons": 5,
+      "rating": 9.5,
+      "is_in_watchlist": false
+    },
+    {
+      "id": "2",
+      "title": "Game of Thrones",
+      "poster_url": "https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/suopoADq0k8YZr4dQXcU6pToj6s.jpg",
+      "synopsis": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+      "genre": "Action, Adventure, Drama",
+      "first_air_year": 2011,
+      "seasons": 8,
+      "rating": 9.3,
+      "is_in_watchlist": false
+    },
+    {
+      "id": "3",
+      "title": "Stranger Things",
+      "poster_url": "https://image.tmdb.org/t/p/w500/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "synopsis": "When a young boy disappears, his mother, a police chief, and his friends must confront terrifying supernatural forces in order to get him back.",
+      "genre": "Drama, Fantasy, Horror",
+      "first_air_year": 2016,
+      "seasons": 4,
+      "rating": 8.7,
+      "is_in_watchlist": false
+    },
+    {
+      "id": "4",
+      "title": "The Mandalorian",
+      "poster_url": "https://image.tmdb.org/t/p/w500/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/o7qi2v4uWQ8bZ1tW3KI0Ztn2epk.jpg",
+      "synopsis": "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
+      "genre": "Action, Adventure, Sci-Fi",
+      "first_air_year": 2019,
+      "seasons": 2,
+      "rating": 8.8,
+      "is_in_watchlist": false
+    },
+    {
+      "id": "5",
+      "title": "The Witcher",
+      "poster_url": "https://image.tmdb.org/t/p/w500/7vjaCdMw15FEbXyLQTVa04URsPm.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
+      "synopsis": "Geralt of Rivia, a solitary monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+      "genre": "Action, Adventure, Fantasy",
+      "first_air_year": 2019,
+      "seasons": 2,
+      "rating": 8.2,
+      "is_in_watchlist": false
+    }
+  ]
+}

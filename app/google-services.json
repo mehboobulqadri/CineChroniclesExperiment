@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "441288981872",
+    "project_id": "cinechronicles-d5a53",
+    "storage_bucket": "cinechronicles-d5a53.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441288981872:android:36cacde2c7c7cd3cc9a3b5",
+        "android_client_info": {
+          "package_name": "com.mehboob.cinechronicles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441288981872-o0j0bgqam1md59abif1golbnf156qn13.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mehboob.cinechronicles",
+            "certificate_hash": "93d16ccad693294719bebe08255570f51e3a3621"
+          }
+        },
+        {
+          "client_id": "441288981872-qst6vo1gcrp5bf74tpduvvgikf492raa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrEN5V3uI9FpjA6CA92cG7YDhjq5sSTrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441288981872-qst6vo1gcrp5bf74tpduvvgikf492raa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441288981872:android:1b45c89a048117d8c9a3b5",
+        "android_client_info": {
+          "package_name": "com.mehboob.cinechroniclesexperiment"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441288981872-qst6vo1gcrp5bf74tpduvvgikf492raa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrEN5V3uI9FpjA6CA92cG7YDhjq5sSTrI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441288981872-qst6vo1gcrp5bf74tpduvvgikf492raa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,48 @@
+{
+  "movies": [
+    {
+      "id": "5",
+      "title": "Dune",
+      "poster_url": "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/jYEW5xZkZk2WTrdbMGAPFuBqbDc.jpg",
+      "synopsis": "Paul Atreides, a brilliant and gifted young man born into a great destiny beyond his understanding, must travel to the most dangerous planet in the universe to ensure the future of his family and his people.",
+      "genre": "Science Fiction, Adventure",
+      "release_year": 2021,
+      "rating": 8.0,
+      "is_favorite": false
+    },
+    {
+      "id": "6",
+      "title": "The Batman",
+      "poster_url": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/5P8SmMzSNYikXpxil6BYzJ16611.jpg",
+      "synopsis": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+      "genre": "Crime, Mystery, Thriller",
+      "release_year": 2022,
+      "rating": 7.8,
+      "is_favorite": false
+    },
+    {
+      "id": "7",
+      "title": "Top Gun: Maverick",
+      "poster_url": "https://image.tmdb.org/t/p/w500/62HCnUTziyWcpDaBO2i1DX17ljH.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/AaV1YIdWKnjAIAOe8UUKBFm327v.jpg",
+      "synopsis": "After more than thirty years of service as one of the Navy's top aviators, Pete Mitchell is where he belongs, pushing the envelope as a courageous test pilot and dodging the advancement in rank that would ground him.",
+      "genre": "Action, Drama",
+      "release_year": 2022,
+      "rating": 8.3,
+      "is_favorite": false
+    },
+    {
+      "id": "8",
+      "title": "Everything Everywhere All at Once",
+      "poster_url": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/uDgy6hyPd82kOHh6I95FLtLnNIh.jpg",
+      "synopsis": "An aging Chinese immigrant is swept up in an insane adventure, where she alone can save the world by exploring other universes connecting with the lives she could have led.",
+      "genre": "Action, Adventure, Science Fiction",
+      "release_year": 2022,
+      "rating": 8.6,
+      "is_favorite": false
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_my_movies"
+            android:icon="@drawable/ic_movie"
+            android:title="My Movies" />
+        <item
+            android:id="@+id/nav_my_series"
+            android:icon="@drawable/ic_tv"
+            android:title="My Series" />
+        <item
+            android:id="@+id/nav_my_ratings"
+            android:icon="@drawable/ic_star"
+            android:title="My Ratings" />
+        <item
+            android:id="@+id/nav_my_notes"
+            android:icon="@drawable/ic_note"
+            android:title="My Notes" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="Profile" />
+    </group>
+
+    <item android:title="Settings">
+        <menu>
+            <item
+                android:id="@+id/nav_dark_mode"
+                android:icon="@drawable/ic_dark_mode"
+                android:title="Dark Mode" />
+            <item
+                android:id="@+id/nav_support"
+                android:icon="@drawable/ic_support"
+                android:title="Support" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

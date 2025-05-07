@@ -1,0 +1,26 @@
+{
+  "movies": [
+    {
+      "id": "9",
+      "title": "The Godfather",
+      "poster_url": "https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/rSPw7tgCH9c6NqICZef4kZjFOQ5.jpg",
+      "synopsis": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "genre": "Crime, Drama",
+      "release_year": 1972,
+      "rating": 9.2,
+      "is_favorite": true
+    },
+    {
+      "id": "10",
+      "title": "Pulp Fiction",
+      "poster_url": "https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg",
+      "backdrop_url": "https://image.tmdb.org/t/p/original/suaEOtk1N1sgg2MTM7oZd2cfVp3.jpg",
+      "synopsis": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "genre": "Crime, Drama",
+      "release_year": 1994,
+      "rating": 8.9,
+      "is_favorite": true
+    }
+  ]
+}
